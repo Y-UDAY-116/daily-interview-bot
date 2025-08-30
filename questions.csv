@@ -1,0 +1,81 @@
+id,topic,question,answer
+1,Excel,What does VLOOKUP do?,Looks up a value in the leftmost column of a table and returns a value in the same row from another column.
+2,Excel,How do you make a cell reference absolute?,Use $ signs like $A$1 to lock column and row.
+3,Excel,What is the difference between COUNT and COUNTA?,COUNT counts numeric cells; COUNTA counts non-empty cells.
+4,Excel,How do you remove duplicates in Excel?,Use Data → Remove Duplicates or UNIQUE() in Excel 365.
+5,Excel,What function returns the current date?,TODAY() returns current date.
+6,Excel,How to combine text from two cells?,Use CONCATENATE(), & operator, or TEXTJOIN().
+7,Excel,What does the IF function do?,Performs conditional logic: IF(condition, value_if_true, value_if_false).
+8,Excel,How do you freeze a row or column?,View → Freeze Panes → choose top row or first column.
+9,Excel,What is a Pivot Table used for?,Summarizing and aggregating data quickly (sum, avg, count, etc.).
+10,Excel,What is INDEX MATCH used for?,An alternative to VLOOKUP: INDEX returns value and MATCH finds position.
+11,Excel,How to calculate percentage change between two numbers?,(New - Old)/Old * 100.
+12,Excel,What does the TRIM function do?,Removes extra leading/trailing spaces from text.
+13,Excel,When to use SUMIF vs SUMIFS?,SUMIF is for one condition; SUMIFS is for multiple conditions.
+14,Excel,What is conditional formatting?,Format cells based on criteria (e.g., highlight values > 100).
+15,Excel,How to get unique values in Excel 365?,Use UNIQUE(range).
+16,Power BI,What is Power Query used for?,Data extraction, transformation, and loading (ETL) inside Power BI.
+17,Power BI,What is DAX?,Data Analysis Expressions, formula language for calculations in Power BI.
+18,Power BI,What is the difference between calculated column and measure?,Calculated columns are computed at data refresh and stored; measures are computed at query time based on filter context.
+19,Power BI,How do relationships work in Power BI model?,Relationships link tables via keys (one-to-many, many-to-one) enabling cross-table filtering.
+20,Power BI,What is a slicer?,A visual filter control that filters data in the report.
+21,Power BI,Why use star schema?,Simplifies data model and improves performance over normalized schema.
+22,Power BI,What is row-level security (RLS)?,Restricts data access for specific users by roles/filters.
+23,Power BI,How to improve report performance?,Use aggregates, reduce visuals, limit columns, use proper data types, and prefer measures over calculated columns.
+24,Power BI,What is Power BI Desktop vs Service?,Desktop is authoring tool; Service is cloud for sharing and dashboards.
+25,Power BI,What is data refresh?,Process of updating dataset with new data from source (scheduled or manual).
+26,Power BI,What is a gateway in Power BI?,A bridge for on-prem data sources to refresh in the cloud.
+27,Power BI,When to use DirectQuery vs Import?,DirectQuery queries source at run time (good for real-time); Import caches data for speed.
+28,Power BI,How to create a quick measure?,Right-click a table → New quick measure or use DAX patterns.
+29,Power BI,What is a KPI visual?,Visual showing measure vs target (trend + status).
+30,Power BI,What is the purpose of bookmarks?,Capture view state (filters, selected marks) for storytelling and navigation.
+31,Tableau,What is a dimension vs measure?,Dimensions are categorical fields; measures are numeric fields used for aggregation.
+32,Tableau,How do you create a calculated field?,Analysis → Create Calculated Field and write expression.
+33,Tableau,What is a context filter?,A filter that sets the context for dependent filters improving performance.
+34,Tableau,How to create bins in Tableau?,Right-click a numeric measure → Create → Bins.
+35,Tableau,What is LOD expression?,Level of Detail expression to compute aggregations at specified granularity (FIXED, INCLUDE, EXCLUDE).
+36,Tableau,What is the difference between extract and live connection?,Extract is a snapshot for speed; live connects directly to source.
+37,Tableau,How to make a dual-axis chart?,Drag two measures to rows then synchronize axes and change mark types.
+38,Tableau,What is Tableau Prep used for?,Preparation and cleaning of data before analysis.
+39,Tableau,What is a parameter?,A user-controlled variable that can replace constant values in calculations and filters.
+40,Tableau,How to create a dashboard action?,Dashboard → Actions → add filter/highlight/url action.
+41,Tableau,What are sheets and dashboards?,Sheet = single view/worksheet; Dashboard = collection of sheets laid out together.
+42,Tableau,How to show top N items dynamically?,Use parameter for N and top filter with INDEX() or RANK().
+43,Tableau,What is data blending?,Combining data from different data sources on common dimensions at viz level.
+44,Tableau,When to use extracts for large datasets?,Use extracts to improve performance when data is large or source is slow.
+45,Tableau,What is a calculated field performance tip?,Avoid row-level string functions in large data; prefer numeric or pre-aggregated sources.
+46,Tableau,How to display labels on marks?,Click Label on Marks card and check Show Mark Labels.
+47,Tableau,What is a heat map used for?,Visualize intensity of values across two dimensions.
+48,Tableau,How to use level-of-detail for running total?,Use WINDOW_SUM or FIXED LOD as needed for cumulative measures.
+49,SQL,What is a primary key?,Unique identifier for table rows; enforces uniqueness.
+50,SQL,What is a foreign key?,A field that references primary key of another table to establish relationships.
+51,SQL,What does SELECT * do?,Returns all columns from the specified table.
+52,SQL,What is WHERE used for?,Filters rows based on condition.
+53,SQL,How to remove duplicate rows?,Use DISTINCT or GROUP BY or ROW_NUMBER() window for dedup logic.
+54,SQL,What is JOIN used for?,Combine rows from two or more tables based on related columns.
+55,SQL,Difference between INNER and LEFT JOIN?,INNER returns matching rows only; LEFT returns all left table rows plus matches.
+56,SQL,What is GROUP BY for?,Aggregate rows by column(s) to compute sums, counts, averages.
+57,SQL,What is HAVING vs WHERE?,WHERE filters before grouping; HAVING filters after aggregation.
+58,SQL,What is an index?,Database structure to speed up search queries on columns.
+59,SQL,What is normalization?,Organizing tables to reduce redundancy (1NF,2NF,3NF).
+60,SQL,What is a subquery?,A query nested inside another query.
+61,SQL,What is a view?,A virtual table based on SQL query; does not store data by default.
+62,SQL,What is a transaction?,A set of SQL operations executed as a single unit (commit/rollback).
+63,Python,What is a list vs tuple?,List is mutable; tuple is immutable.
+64,Python,How to read a CSV in pandas?,Use pd.read_csv('file.csv').
+65,Python,What is a dictionary?,Key-value mapping data structure in Python.
+66,Python,How to handle missing values in pandas?,Use df.dropna(), df.fillna(), or interpolation methods.
+67,Python,What is list comprehension?,Compact way to create lists: [x*2 for x in items].
+68,Python,How to install a package?,Use pip install package_name.
+69,Python,What is a lambda function?,Small anonymous function: lambda x: x+1.
+70,Python,How to create a DataFrame?,pd.DataFrame(data) where data is dict/list/ndarray.
+71,Python,What is groupby in pandas?,Group rows by key and apply aggregate functions.
+72,Python,How to merge/join DataFrames?,Use pd.merge(left,right,on=key) or df.join().
+73,Python,What is .apply() used for?,Apply a function along axis of DataFrame or Series.
+74,Python,How to get unique values in a column?,df['col'].unique() or df['col'].nunique() for count.
+75,Python,What is exception handling?,Use try/except blocks to handle runtime errors.
+76,Python,How to save a DataFrame to CSV?,df.to_csv('file.csv', index=False)
+77,Python,What is a virtual environment?,Isolated Python environment created by venv or conda.
+78,Python,How to time operations?,Use time.time() or timeit module for benchmarking.
+79,Python,What is a generator?,Function that yields values lazily using yield.
+80,Python,How to pivot a DataFrame?,Use df.pivot_table(index=..., columns=..., values=..., aggfunc=...)
